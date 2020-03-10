@@ -31,7 +31,7 @@ import sys
 import calendar
 from datetime import datetime
 
-# set to receive 2 arguments max, print warning and exit
+# set to receive 2 extra arguments max, print warning and exit
 
 if len(sys.argv) > 3:
   print('too many arguments given.')
@@ -42,12 +42,12 @@ if len(sys.argv) > 3:
 month = datetime.today().month
 year = datetime.today().year
 
-# if 2 arguments were passed in, set year to year argument
+# if extra 2 arguments were passed in, set year to third argument
 
 if len(sys.argv) > 2:
   year = int(sys.argv[2])
 
-# if 1 argument passed in, set month to month argument
+# if extra 1 argument passed in, set month to second argument
 
 if len(sys.argv) > 1:
   month = int(sys.argv[1])
